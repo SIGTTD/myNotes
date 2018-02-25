@@ -1,0 +1,305 @@
+body {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	font-family: "Helvetica", sans-serif;
+	font-size: 15px;
+	line-height: 25px;
+	background: #efeffe;
+}
+
+ul {
+	list-style: none;
+}
+
+h2 {
+	font-family: "Open Sans", sans-serif;
+	font-size: 17px;
+	line-height: 17px;
+}
+
+a {
+	text-decoration: none;
+	color: #000;
+}
+
+#pageHeader {
+	width: 560px;
+	min-height: 50px;
+	margin: 0 auto;
+}
+
+#pageHeader > ul {
+	display: block;
+	margin: 0 auto;
+	margin-top: 10px;
+}
+
+#pageHeader li {
+	text-align: center;
+	border: 2px solid #fff;
+	border-radius: 5px;
+}
+
+#pageHeader > ul > li {
+	display: inline-block;
+	position: relative;
+	width: 150px;
+	height: 30px;
+	margin-right: 10px;
+	background: #fff;
+}
+
+#pageHeader > ul > li a {
+	display: block;
+	width: 100%;
+	height: 100%;
+	padding-top: 2px;
+}
+
+#pageHeader > ul > li > ul > li > a {
+	padding-top: 0;
+}
+
+#pageHeader > ul > li > ul {
+	display: none;
+	position: absolute;
+	top: 30px;
+	left: -30px;
+	z-index: 100;
+}
+
+#pageHeader > ul > li > ul > li {
+	width: 125px;
+	height: 25px;
+	margin-top: 5px;
+	background: #fff;
+}
+
+#pageHeader li:hover, #pageHeader li:active, #pageHeader li:focus {
+	background: #ceceec;
+	border: 2px solid #fff;
+}
+
+#pageHeader > ul > li:first-of-type:hover > ul, 
+#pageHeader > ul > li:first-of-type:active > ul, 
+#pageHeader > ul > li:first-of-type:focus > ul {
+	display: block;
+	border: 1px solid #eee;
+}
+
+#note {
+	width: 450px;
+	min-height: 150px;
+	margin: 150px auto 0 auto;
+	padding: 0;
+	border: 2px solid #ceceec;
+	border-radius: 20px;
+	box-sizing: border-box;
+	background: #fff;
+}
+
+#note textarea {
+	display: block;
+	margin: 20px auto;
+	border: 2px solid #ceceec;
+	border-radius: 5px;
+	box-sizing: border-box;
+	background: #f9f9ff;
+}
+
+#note input {
+	display: block;
+	width: 100px;
+	height: 25px;
+	margin: 0 auto;
+	margin-bottom: 15px;
+	border: 2px solid #ceceec;
+	border-radius: 5px;
+	box-sizing: border-box;
+	background: #ceceec;
+}
+
+#recentPosts h2 {
+	width: 200px;
+	height: 50px;
+	margin: 50px auto;
+	font-size: 20px;
+}
+
+#recentPosts > div > div {
+	width: 450px;
+	min-height: 100px;
+	margin: 25px auto;
+	padding: 20px 30px;
+	border: 2px solid #ceceec;
+	border-radius: 20px;
+	box-sizing: border-box;
+	background: #fff;
+	font-size: 14px;
+}
+
+#postContent {
+	border-radius: 5px;
+	overflow-wrap: break-word;
+}
+
+#postContent:hover {
+	padding: 0 5px;
+	box-shadow: 0 0 10px 10px #efeffe;
+}
+
+#deletePost {
+	margin-left: 15px;
+}
+
+.postMeta {
+	display: inline-block;
+	width: 50%;
+	height: 15px;
+	margin-top: 5px;
+	padding-right: 10px;
+	text-align: right;
+	font-size: 13px;
+	font-family: "Georgia", sans-serif;
+	font-style: italic;
+	color: #bfbfbf;
+}
+
+#editForm {
+	position: relative;
+}
+
+#editForm > div {
+	display: flex;
+	width: 100%;
+	margin: 15px 0 0 0;
+	justify-content: space-between;
+}
+
+#editForm input {
+	display: block;
+	width: 100px;
+	height: 25px;
+	margin-top: 5px;
+	border: 2px solid #ceceec;
+	border-radius: 5px;
+	box-sizing: border-box;
+	background: #f9f9ff;
+}
+
+#editForm input:hover {
+	background: #ceceec;
+}
+
+#editForm textarea {
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	min-height: 25px;
+	margin: 0;
+	border: 2px solid #ceceec;
+	border-radius: 5px;
+	box-sizing: border-box;
+	background: #f9f9ff;
+}
+
+#editForm textarea:hover {
+	display: block;
+}
+
+#loginForm,
+#regForm {
+	position: fixed;
+	top: 100px;
+	right: 5%;
+	width: 200px;
+	height: 200px;
+	margin: 0;
+	padding: 0;
+	border: 2px solid #ceceec;
+	border-radius: 20px;
+	box-sizing: border-box;
+	background: #fff;
+}
+
+#regForm {
+	visibility: hidden;
+	top: 400px;
+	height: 280px;
+}
+
+#loginForm h2 {
+	margin: 25px 0;
+	text-align: center;
+}
+
+#regForm h2 {
+	visibility: visible;
+	height: 25px;
+	margin: 25px auto;
+	border: 2px solid #ceceec;
+	border-radius: 5px;
+	box-sizing: border-box;
+	background: #ceceec;
+	font-size: 14px;
+	text-align: center;
+}
+
+#loginForm input,
+#regForm input {
+	display: block;
+	width: 150px;
+	height: 25px;
+	margin: 0 auto;
+	margin-bottom: 15px;
+	border: 2px solid #ceceec;
+	border-radius: 5px;
+	box-sizing: border-box;
+	background: #f9f9ff;
+}
+
+#loginForm input[type="submit"],
+#regForm input[type="submit"] {
+	min-width: 100px;
+	background: #ceceec;
+}
+
+#loginForm input[type="submit"]:hover,
+#regForm input[type="submit"]:hover,
+#regForm h2:hover,
+#note input:hover {
+	background: #f9f9ff;
+}
+
+#hintImg {
+	position: fixed;
+	top: 250px;
+	left: 3%;
+}
+
+#hintBlock {
+	visibility: hidden;
+	position: fixed;
+	top: 250px;
+	left: 3%;
+	width: 250px;
+	min-height: 200px;
+	margin: 0;
+	padding: 25px;
+	box-sizing: border-box;
+	background: #fff;
+	z-index: 5;
+}
+
+#hintBlock img {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+#hintBlock h2 {
+	text-align: center;
+}
