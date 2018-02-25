@@ -11,7 +11,7 @@
 		}
 		if (isset($_POST['editPost'])) {
 			$editPost = $_POST['editPost'.$i];
-			$editedPost = $_POST['editedPost'.$i];
+			$editedPost = $_POST['editedPost'.$i]; 
 			$editPostSQL = "UPDATE ".$userName." SET content = '" . $editedPost . "' WHERE id = $i";
 			mysql_query($editPostSQL);
 			header('Location: http://sigttd.ru:81/#editedPost');
