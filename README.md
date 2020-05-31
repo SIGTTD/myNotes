@@ -1,2 +1,2 @@
 # myNotes
-Service for notes
+First php project
